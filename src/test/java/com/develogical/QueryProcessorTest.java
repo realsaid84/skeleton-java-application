@@ -12,7 +12,7 @@ public class QueryProcessorTest {
 
   @Test
   public void knowsWhoWroteRomeoAndJuliet() throws Exception {
-    //humberdink it
+    
     assertThat(queryProcessor.process("Who wrote Romeo And Juliet"), containsString("Shakespeare"));
   }
 
