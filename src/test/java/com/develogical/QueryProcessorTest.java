@@ -22,7 +22,7 @@ public class QueryProcessorTest {
   }
 
   @Test
-  public void returnsEmptyStringIfCannotProcessQuery() throws Exception {
-    assertThat(queryProcessor.process("test"), is(""));
+  public void returnsMyTopTitlesIfCannotProcessQuery() throws Exception {
+    assertThat(queryProcessor.process("test"), containsString("Ulysses by James Joyce"));
   }
 }
